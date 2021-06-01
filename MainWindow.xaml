@@ -1,0 +1,46 @@
+﻿<Window x:Class="Sitech_ProgrammingExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:support="clr-namespace:Sitech_ProgrammingExercise.Support"
+        Title="MainWindow" Height="350" Width="525" Closed="Window_Closed" >
+    <Grid>
+        <TabControl>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Exercise 1</TextBlock>
+                </TabItem.Header>
+                <TextBlock x:Name="m_ctrl_excercise1_tb"></TextBlock>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Exercise 2</TextBlock>
+                </TabItem.Header>
+                <ListBox x:Name="m_ctrl_exercise2"></ListBox>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Exercise 3</TextBlock>
+                </TabItem.Header>
+                <TextBlock x:Name="m_ctrl_excercise3_tb"></TextBlock>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Exercise 4</TextBlock>
+                </TabItem.Header>
+                <ListBox x:Name="m_ctrl_file_paths"></ListBox>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Exercise 5</TextBlock>
+                </TabItem.Header>
+                <ListBox x:Name="m_ctrl_lb"></ListBox>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Exercise 6</TextBlock>
+                </TabItem.Header>
+                <support:Exercise_Canvas x:Name="m_ctrl_exercise6_canvas"></support:Exercise_Canvas>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
